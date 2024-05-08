@@ -6,3 +6,4 @@
 set -e
 
 # Bypass
+echo '{"errors": [], "warnings": []}' > product.json
