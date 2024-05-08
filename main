@@ -6,4 +6,7 @@
 set -e
 
 # Bypass
+MASK=$(jq -r '.mask' config.json)
 echo '{"errors": [], "warnings": []}' > product.json
+mkdir -p output
+cp $MASK output/mask.nii.gz
